@@ -24,12 +24,16 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
+
+
+/* Moved to project file
 [assembly: AssemblyTitle("StatePrinter")]
 [assembly: AssemblyDescription("An open source utility to turn object graphs into strings. Automatic unit testing and ToString() methods. Apache v2.0 License")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Kasper B. Graversen, Inc.")]
 [assembly: AssemblyProduct("StatePrinter")]
 [assembly: AssemblyCopyright("Kasper B. Graversen")]
+*/
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: CLSCompliant(true)]
@@ -52,6 +56,8 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
+/* moved to project file
 [assembly: AssemblyVersion("3.0.0.0")]     // Change this upon breaking changes
 [assembly: AssemblyFileVersion("3.0.311.0")] // Bump this at every release
+*/
 //[assembly: AssemblyInformationalVersion("2.2.281-rc")] // Only set on pre-releases. Customer public info (setting a version across multiple products each possibly with their own versioning)
