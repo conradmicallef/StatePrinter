@@ -44,6 +44,17 @@ namespace StatePrinting.Configurations
             return configuration;
         }
 
+        private static readonly object[] NoArg = new object[0];
+
+        public Configuration SetAreEqualsMethod(Action<string,string,string,object[]> nunitAreEqualsMethod)
+        {
+            if (nunitAreEqualsMethod == null)
+                throw new ArgumentNullException("nunitAreEqualsMethod");
+            AreEqualsMethod = new TestFrameworkAreEqualsMethod((actual, expected, message) => nunitAreEqualsMethod(actual,expected,message,NoArg));
+
+            return configuration;
+        }
+
         /// <summary>
         /// Configure how to call AreEquals in the unit testing framework of your choice. 
         /// Only set this field if you are using the <see cref="Stateprinter.Assert"/> functionality.
