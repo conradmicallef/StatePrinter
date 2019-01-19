@@ -23,12 +23,12 @@ namespace StatePrinting.TestAssistance
 {
     public class EnvironmentReader
     {
-        public const string Usetestautorewrite_env_var_name = "StatePrinter_UseTestAutoRewrite";
+        public const string Usetestautorewrite = "StatePrinter_UseTestAutoRewrite";
 
         public bool UseTestAutoRewrite()
         {
             string result = Environment.GetEnvironmentVariable(
-                Usetestautorewrite_env_var_name, 
+                Usetestautorewrite, 
                 EnvironmentVariableTarget.User);
             return "true".Equals(result, StringComparison.Ordinal);
         }
