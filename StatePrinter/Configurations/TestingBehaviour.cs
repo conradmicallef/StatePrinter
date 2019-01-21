@@ -18,7 +18,6 @@
 // under the License.
 
 using System;
-using System.Data.SqlClient;
 using StatePrinting.TestAssistance;
 
 namespace StatePrinting.Configurations
